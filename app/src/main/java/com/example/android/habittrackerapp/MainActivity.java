@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         displayDatabaseInfo();
     }
 
-    private void displayDatabaseInfo() {
+    private Cursor readDatabase() {
         SQLiteDatabase db = mDbHelper.getReadableDatabase();
 
         String[] projection = {
@@ -55,6 +55,11 @@ public class MainActivity extends AppCompatActivity {
         // Create the Cursor
         Cursor cursor = db.query(HabitContract.HabitEntry.TABLE_NAME, projection, null, null,
                 null, null, null);
+        return cursor;
+    }
+
+    private void displayDatabaseInfo() {
+        Cursor cursor = readDatabase();
 
         TextView displayView = (TextView) findViewById(R.id.text_view_habit);
 
