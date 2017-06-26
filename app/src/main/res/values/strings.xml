@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">HabitTracker</string>
+
+    <string name="editor_activity_title_new_habit">Add an Habit</string>
+    <string name="action_save">Save</string>
+    <string name="category_name">Name</string>
+    <string name="category_frequency">Frequency</string>
+    <string name="category_date">Date</string>
+
+    <string name="hint_habit_name">Name</string>
+
+    <string name="habit_date">yyyy-mm-dd</string>
+
+    <string name="frequency_unknown">Unknown</string>
+    <string name="frequency_high">High</string>
+    <string name="frequency_low">Low</string>
+
+</resources>

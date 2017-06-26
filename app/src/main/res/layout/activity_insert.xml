@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context=".InsertActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_name" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/small_padding">
+
+            <EditText
+                android:id="@+id/edit_habit_name"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_habit_name" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_frequency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_frequency" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinner_frequency"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/spinner_height"
+                android:paddingRight="@dimen/activity_margin"
+                android:spinnerMode="dropdown"></Spinner>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:layout_marginRight="@dimen/activity_margin"
+            android:text="@string/category_date" />
+
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/habit_date" />
+
+    </LinearLayout>
+
+</LinearLayout>
